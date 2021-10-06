@@ -42,19 +42,19 @@ const Feedback = () => {
       <Section title="Please leave your feedback">
         <Buttons addFeedback={addFeedback} options={['good', 'neutral', 'bad']} />
       </Section>
-      {/* {total === 0 ? (
+      {total === 0 ? (
         <Notification message="No feedback given" />
-      ) : ( */}
-      <Section title="Statistics">
-        <Statistics
-          good={good}
-          neutral={neutral}
-          bad={bad}
-          total={total}
-          percentage={posPercentage}
-        />
-      </Section>
-      {/* )} */}
+      ) : (
+        <Section title="Statistics">
+          <Statistics
+            good={good}
+            neutral={neutral}
+            bad={bad}
+            total={total}
+            percentage={posPercentage}
+          />
+        </Section>
+      )}
     </>
   );
 };
